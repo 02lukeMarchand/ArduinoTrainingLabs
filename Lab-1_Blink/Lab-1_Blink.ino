@@ -41,9 +41,10 @@ void loop() {
   // put your main code here, to run repeatedly:
   if (buttonState == HIGH){
     digitalWrite(led, HIGH);
-    delay(500);
+        
+  }
+  else {
     digitalWrite(led, LOW);
-    delay(2000);
   }
   delay(250); //delay in between readings for stability  
 }
