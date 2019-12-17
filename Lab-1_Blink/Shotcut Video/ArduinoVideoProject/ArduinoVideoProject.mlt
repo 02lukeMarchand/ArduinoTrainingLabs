@@ -6,8 +6,8 @@
     <property name="shotcut:projectFolder">1</property>
     <property name="xml_retain">1</property>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:10:42.680">
-    <property name="length">00:10:42.720</property>
+  <producer id="black" in="00:00:00.000" out="00:09:49.160">
+    <property name="length">00:09:49.200</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -16,9 +16,45 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:10:42.680"/>
+    <entry producer="black" in="00:00:00.000" out="00:09:49.160"/>
   </playlist>
   <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="00:10:48.000">
+    <property name="length">00:10:48.040</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lmarchand/Luke Marchand/Arduino/ArduinoTrainingLabs/Lab-1_Blink/Screencasts/12.18.19VideoProject.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-17T19:52:33</property>
+    <property name="shotcut:hash">b3f473f1b618df556715b906320cba99</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">12.18.19VideoProject.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="00:10:48.000">
+    <property name="length">00:10:48.040</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lmarchand/Luke Marchand/Arduino/ArduinoTrainingLabs/Lab-1_Blink/Screencasts/12.18.19VideoProject.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-17T19:52:33</property>
+    <property name="shotcut:hash">b3f473f1b618df556715b906320cba99</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">12.18.19VideoProject.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="00:10:48.000">
     <property name="length">00:10:48.040</property>
     <property name="eof">pause</property>
     <property name="resource">/home/lmarchand/Luke Marchand/Arduino/ArduinoTrainingLabs/Lab-1_Blink/Screencasts/12.18.19VideoProject.mp4</property>
@@ -39,9 +75,11 @@
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="producer0" in="00:00:05.320" out="00:10:48.000"/>
+    <entry producer="producer0" in="00:00:05.320" out="00:08:08.680"/>
+    <entry producer="producer1" in="00:08:14.240" out="00:09:11.720"/>
+    <entry producer="producer2" in="00:09:59.760" out="00:10:48.000"/>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 19.12.16" global_feed="1" in="00:00:00.000" out="00:10:42.680">
+  <tractor id="tractor0" title="Shotcut version 19.12.16" global_feed="1" in="00:00:00.000" out="00:09:49.160">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
