@@ -79,12 +79,52 @@
     <entry producer="producer1" in="00:08:14.240" out="00:09:11.720"/>
     <entry producer="producer2" in="00:09:59.760" out="00:10:48.000"/>
   </playlist>
+  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:00:17.400">
+    <property name="length">00:00:17.440</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lmarchand/Luke Marchand/Arduino/ArduinoTrainingLabs/Lab-1_Blink/ArduinoVideo/IMG_2696.MOV</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">1</property>
+    <property name="mlt_service">avformat</property>
+    <property name="video_delay">-1</property>
+    <property name="force_aspect_ratio">1</property>
+    <property name="shotcut_aspect_num">9</property>
+    <property name="shotcut_aspect_den">16</property>
+    <property name="shotcut:hash">06b08676c6d0d0b5ef75b457d5fac9b6</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">IMG_2696.MOV</property>
+    <filter id="filter0" out="00:00:17.400">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.invert_scale">1</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.605</property>
+      <property name="transition.scale_y">0.605</property>
+      <property name="transition.ox">-1846</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:03:22.960"/>
+    <entry producer="producer3" in="00:00:00.000" out="00:00:17.400"/>
+  </playlist>
   <tractor id="tractor0" title="Shotcut version 19.12.16" global_feed="1" in="00:00:00.000" out="00:09:49.160">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
     <track producer="background"/>
     <track producer="playlist0"/>
+    <track producer="playlist1"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -98,6 +138,20 @@
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
     </transition>
   </tractor>
 </mlt>
