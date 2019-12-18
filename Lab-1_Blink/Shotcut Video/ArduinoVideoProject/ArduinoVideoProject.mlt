@@ -130,6 +130,22 @@
       <property name="transition.oy">0</property>
       <property name="transition.threads">0</property>
     </filter>
+    <filter id="filter1" out="00:00:17.400">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:00.560=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">00:00:00.600</property>
+    </filter>
+    <filter id="filter2" out="00:00:17.400">
+      <property name="start">1</property>
+      <property name="level">00:00:16.840=1;00:00:17.400=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">00:00:00.600</property>
+    </filter>
   </producer>
   <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:00:09.240">
     <property name="length">00:00:09.280</property>
@@ -148,7 +164,7 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="shotcut:caption">IMG_2697.MOV</property>
-    <filter id="filter1" out="00:00:09.240">
+    <filter id="filter3" out="00:00:09.240">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineRotate</property>
@@ -159,6 +175,22 @@
       <property name="transition.ox">-1174</property>
       <property name="transition.oy">34</property>
       <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter4" out="00:00:09.240">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:00.560=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">00:00:00.600</property>
+    </filter>
+    <filter id="filter5" out="00:00:09.240">
+      <property name="start">1</property>
+      <property name="level">00:00:08.680=1;00:00:09.240=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">00:00:00.600</property>
     </filter>
   </producer>
   <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:00:13.280">
@@ -178,7 +210,7 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="shotcut:caption">IMG_2698.MOV</property>
-    <filter id="filter2" out="00:00:13.280">
+    <filter id="filter6" out="00:00:13.280">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineRotate</property>
@@ -189,6 +221,22 @@
       <property name="transition.ox">-1644</property>
       <property name="transition.oy">0</property>
       <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter7" out="00:00:13.280">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:00.560=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">00:00:00.600</property>
+    </filter>
+    <filter id="filter8" out="00:00:13.280">
+      <property name="start">1</property>
+      <property name="level">00:00:12.720=1;00:00:13.280=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">00:00:00.600</property>
     </filter>
   </producer>
   <playlist id="playlist1">
